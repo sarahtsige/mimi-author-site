@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mimi Veshi — Writer</title>
+<meta name="description" content="Mimi Veshi writes personal essays and creative nonfiction on identity, motherhood, and immigrant life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#top" class="wordmark">Mimi Veshi</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#essays" class="nav-link">Essays</a>
+  <a href="#reading" class="nav-link">Reading</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
+<header id="top" class="hero">
+  <div class="hero-circle" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">Essays &amp; Creative Nonfiction</div>
+      <h1>Mimi Veshi</h1>
+      <p class="tagline">Writing on identity, motherhood, and the small absurdities of an immigrant life in America.</p>
+      <p class="hero-sub">Based in the Washington, DC area. Wife, mother, yoga teacher, and a guitar student who is still very much a beginner.</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/mimi-author-photo.jpg" alt="Mimi Veshi">
+    </figure>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <div class="about-copy">
+    <p class="pull-quote">&ldquo;Her essays are humorous by instinct, but they don&rsquo;t look away from what&rsquo;s underneath.&rdquo;</p>
+    <div class="about-body">
+      <p>Mimi writes personal essays and creative nonfiction shaped by growing up between two cultures — the daughter of immigrants, then a mother herself, watching the same questions of belonging show up in a new generation. Her work takes on race, identity, and culture, and the news of the day as it lands on an ordinary household.</p>
+      <p>She lives in the Washington, DC area, where she&rsquo;s a wife, a mother, and a yoga teacher — and, more recently, an aspiring guitar player, much to her family&rsquo;s patient amusement.</p>
+    </div>
+  </div>
+</section>
+
+<section id="essays" class="essays">
+  <h2>Essays &amp; Writing</h2>
+  <p class="section-intro">A running thread of themes she returns to — funny, personal, and rarely just about one thing.</p>
+  <div class="essay-grid">
+    <article class="essay-card essay-card--sage">
+      <div class="kicker">Identity</div>
+      <h3>On being asked &ldquo;where are you really from&rdquo;</h3>
+      <p>A lifelong tally of a question that never gets easier to answer, or funnier to field at a dinner party.</p>
+    </article>
+    <article class="essay-card essay-card--rust">
+      <div class="kicker">Motherhood</div>
+      <h3>Raising a kid who corrects my accent</h3>
+      <p>What it means to pass down a culture your own child is already editing.</p>
+    </article>
+    <article class="essay-card essay-card--sage">
+      <div class="kicker">Culture &amp; Current Events</div>
+      <h3>The news cycle, from the yoga mat</h3>
+      <p>Trying to breathe through a headline, and mostly failing, and writing about it instead.</p>
+    </article>
+  </div>
+</section>
+
+<section id="reading" class="reading">
+  <h2>What I&rsquo;m Reading</h2>
+  <p class="section-intro">A running shelf — books currently open on the nightstand.</p>
+  <div class="reading-list">
+    <div class="reading-row">
+      <span class="numeral">01</span>
+      <div>
+        <h3>Crying in H Mart</h3>
+        <p class="author">Michelle Zauner</p>
+      </div>
+      <span class="status status--gold">Currently reading</span>
+    </div>
+    <div class="reading-row">
+      <span class="numeral">02</span>
+      <div>
+        <h3>Minor Feelings</h3>
+        <p class="author">Cathy Park Hong</p>
+      </div>
+      <span class="status">Just finished</span>
+    </div>
+    <div class="reading-row reading-row--last">
+      <span class="numeral">03</span>
+      <div>
+        <h3>The Yoga of Breath</h3>
+        <p class="author">Richard Rosen</p>
+      </div>
+      <span class="status">On the nightstand</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-inner">
+    <div class="contact-copy">
+      <div class="eyebrow eyebrow--contact">No spam, ever</div>
+      <h2>Stay in touch</h2>
+      <p>No book to sell yet, no event to promote — just new essays, sent occasionally, straight from the DC suburbs.</p>
+    </div>
+    <form id="signup-form" class="signup-form" novalidate>
+      <input type="hidden" name="access_key" value="431c6bba-0663-4922-b255-b4e0d005bb95">
+      <input type="hidden" name="subject" value="New newsletter signup — Mimi Veshi site">
+      <input type="hidden" name="from_name" value="mimiveshi.com">
+      <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+      <button type="submit" id="signup-button">Sign up</button>
+      <p id="signup-error" class="signup-error" hidden>Something went wrong — please try again in a moment.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">© 2026 Mimi Veshi</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
