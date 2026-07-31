@@ -194,7 +194,7 @@ a:hover { color: var(--sage); }
 }
 
 /* Shared section heading styles */
-.essays h2, .reading h2 {
+.essays h2, .published h2, .reading h2 {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;
@@ -260,6 +260,53 @@ a:hover { color: var(--sage); }
 
 .essay-card p {
   font-size: 15px;
+  color: var(--text-soft);
+}
+
+/* Published Works */
+.published {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 64px 110px;
+}
+
+.published-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.published-item {
+  padding: 24px 0;
+  border-top: 1px solid oklch(24% 0.018 90 / 0.14);
+}
+
+.published-item--last {
+  border-bottom: 1px solid oklch(24% 0.018 90 / 0.14);
+}
+
+.published-item h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  margin: 0 0 6px;
+}
+
+.published-item h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.published-item h3 a:hover {
+  color: var(--sage-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.published-byline {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.02em;
   color: var(--text-soft);
 }
 
@@ -465,7 +512,7 @@ a:hover { color: var(--sage); }
     gap: 32px;
   }
 
-  .essays, .reading { padding-left: 32px; padding-right: 32px; }
+  .essays, .published, .reading { padding-left: 32px; padding-right: 32px; }
 
   .essay-grid { grid-template-columns: 1fr; }
 
@@ -478,6 +525,6 @@ a:hover { color: var(--sage); }
 
 @media (max-width: 520px) {
   .hero h1 { font-size: 48px; }
-  .about h2, .essays h2, .reading h2, .contact-copy h2 { font-size: 40px; }
+  .about h2, .essays h2, .published h2, .reading h2, .contact-copy h2 { font-size: 40px; }
   .pull-quote { font-size: 24px; }
 }
